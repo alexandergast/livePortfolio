@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+/* Font Setup */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"),
+  local("OpenSans-Light"),
+  url("http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2") format("woff2");
+}
+
+/* Main Settings */
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:hover {
+  color: #007bff;
+  -webkit-transition: .7s ease;
+  transition: .3s ease;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: none;
+  opacity: .75;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+.op-hover-1:hover {
+  opacity: 1;
+}
+
+/** Header **/
+#ag-header {
+  padding: 35px 0 15px 0;
+  align-items: center;
+}
+
+/* Brand & Logotype */
+.navbar-brand {
+  display: block;
+}
+
+#ag-logotype h1,
+#ag-logotype h2 {
+  color: #000;
+}
+
+#ag-logotype h1 {
+  margin-bottom: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#ag-logotype h2 {
+  font-size: .7rem;
+}
+
+#ag-logotype img {
+  width: 35px;
+  float: left;
+  margin-right: 25px;
+}
+
+/* Navigation */
+.nav-link {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #666;
+}
+
+.active {
+  color: #000;
+}
+
+/** Footer **/
+#ag-footer {
+  padding: 80px 0;
+  text-align: right;
+}
+
+#ag-footer .copyright {
+  font-size: .7rem;
+}
+
+/** Home **/
+.bd-placeholder-img img {
+  height: 15rem;
+}
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+a.bg-light:hover {
+  background-color: #f8f9fa !important;
+}
+
+a.bg-dark:hover {
+  background-color: #343a40 !important;
+}
+
+.ag-project-image {
+  width: 100%;
+  height: 18.75rem;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.ag-project-image img {
+  width: 100%;
+}
+
+.ag-project-item:hover .ag-project-image {
+  transform: scale(1.05);
+}
+
+.ag-project-item .status {
+  padding: 3px 10px;
+  border-radius: 20px 20px;
+  display: inline;
+  font-size: .8rem;
+}
+
+.st-light {
+  border: 1px solid #fff;
+}
+
+.st-dark {
+  border: 1px solid #343a40;
+}
+
+/** About **/
+.about-photo-container img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.about-photo-container .resume {
+  height: 3.125rem;
+  line-height: 3.125rem;
+  background-color: #343a40;
+  border-radius: 0 0 5px 5px;
+  display: block;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #fff;
+}
+
+.about-text h2 {
+  text-transform: uppercase;
+}
